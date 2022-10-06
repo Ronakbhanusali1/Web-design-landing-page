@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  
+    background-image: url(../images/backcover.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size:65%;
+    /* background-attachment: fixed; */
+
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #2F337D;
+
+}
+
+.nav-items {
+
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    font-family: 'poppins';
+    margin-right: 300px;
+    cursor: pointer;
+    /* margin-left: 20px; */
+
+}
+
+.nav-items h5:hover{
+
+    color: black;
+    text-decoration: underline;
+}
+
+.nav-items > h5 {
+
+ margin-left: 50px ;
+
+}
+
+.signin-btn {
+
+    border-radius: 15px;
+    padding: 5px 15px;
+    background: linear-gradient(.25turn,#965CF2, #FF8ADC);
+    margin-right: 100px;
+    color: white;
+    border-style: none;
+    font-size: 12px;
+}
+
+
+.signin-btn:hover {
+
+    background: black;
+    cursor: pointer;
+}
+.logo {
+
+    margin-right: 200px;
+
+}
+
+.left-section  {
+
+    margin-top: 150px;
+    margin-left: 80px;
+    font-family: 'poppins';
+
+}
+
+.left-section h1 {
+
+    font-size: 70px;
+    color: #3E4794;
+    margin-bottom: 20px;
+}
+
+
+.left-section h4 {
+margin-top: 60px;
+    font-weight: light;
+    overflow-wrap: break-word;
+    inline-size: 350px;
+    /* margin-left: px; */
+    color: #80839E;
+}
+
+.learn-more-btn {
+
+    border-radius: 30px;
+    padding: 13px 30px;
+    background: linear-gradient(.25turn,#965CF2, #FF8ADC);
+    /* margin-right: 100px; */
+    color: white;
+    
+    font-size: 24px;
+    margin-top: 60px;
+    border-style: none;
+}
+
+.learn-more-btn:hover {
+
+    background: black;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+.imgs-div {
+
+    position: absolute;
+    top: 5rem;
+    right: 9rem;
+}
+
+.imgs-div .vector-img {
+
+    /* height: 100px; */
+    margin-bottom: 126px;
+    margin-left: 40px;
+}
+
+.imgs-div .vector-dot {
+
+
+   position: absolute;
+   bottom: 220px;
+   left: 100px;
+}
+
+.burger {
+    display: none;
+}
+
+/* Tablet breakpoint */
+
+@media (max-width:768px) {
+
+    nav  {
+        gap: 0;
+        font-size: 10px;
+        justify-content: center;
+        margin-top: 12px;
+        
+        
+    
+    }
+    .nav-items {
+    
+        margin-left: 250px;
+        /* gap: px; */
+        /* color: red; */
+    }
+    
+    .logo{
+        /* display: block; */
+        position: absolute;
+        height: 20px;
+        left: 10px;
+    
+    
+    }
+    
+    .signin-btn {
+        position: absolute;
+        right: -80px;
+        font-size: 10px;
+        text-align: center;
+        
+    }
+    
+     body {
+    
+        background-position: calc(100% - 0px) 50%;
+    
+            
+        }
+    
+    .left-section {
+    
+        width: 50%;
+        
+        
+    }
+    
+    .left-section h1 {
+    
+        font-size: 35px;
+    }
+    
+    .left-section h4 {
+    
+        font-size: 10px;
+        inline-size: 180px;
+        
+    }
+    
+    .imgs-div {
+    position: absolute;
+        left: 15.5rem;
+        top:-10rem ;
+        bottom: 8rem;
+        /* width: %; */
+    
+        
+    }
+    
+    .learn-more-btn {
+    
+        font-size: 15px;
+    }
+
+    .burger {
+        display: none;
+    }
+
+
+
+
+
+    }
+    
+    
+    
+    /* Mobile breakpoint  */
+
+    @media (max-width:480px) {
+
+        body {
+            
+             
+           background: #EDBDF2;
+        }
+
+
+
+        nav {
+
+            /* display: none; */
+            /* margin-top: 0 ; */
+        }
+
+        .signin-btn {
+            display: none;
+            font-size: 2px;
+        }
+
+        .nav-item {
+
+            display: none;
+        }
+
+        .burger {
+            display: block;
+            position: absolute;
+            
+            height: 30px;
+            left: 25rem;
+            margin-top: 13px;
+            cursor: pointer;
+
+
+           /* float: right; */
+             
+        }
+
+        .logo {
+            margin-top: 13px;
+
+            left: 10rem;
+        }
+
+      .intro-section {
+
+        display: flex;
+        /* align-items: center; */
+        margin-left: 120px;
+        width: 500px;
+
+
+        
+
+      }
+
+      .imgs-div {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        width: 75%;
+        height: 100px;
+        position: absolute;
+        top: 32rem;
+        left: 8rem;
+      }
+
+      .vector-img {
+        display: none;
+      }
+
+
+      .vector-dot {
+
+        display: none;
+      }
+
+
+      
+
+
+       
+
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
